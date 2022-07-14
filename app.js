@@ -15,6 +15,8 @@ app.use((req, res, next) => {
     next()
   })
 
+app.use(express.static('public'))
+
 //Routes List
 app.get('/', (req, res) => {
     cont = [
